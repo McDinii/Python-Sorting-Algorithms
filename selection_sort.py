@@ -9,7 +9,7 @@ def create_array(size=10, maxint=50):
 
 
 # performs the selection sort algorithm on the passed
-# list, returns tje sorted version
+# list, returns the sorted version
 def selection_sort(a):
     sort_len = 0  # length of current sorted portion
     while sort_len < len(a):
@@ -24,7 +24,7 @@ def selection_sort(a):
     return a
 
 
-# benchmarks the bubble sort against the built in
+# benchmarks the built in against other sorts
 # python sorting method
 def benchmark(n=[10, 100, 1000, 10000]):
     from time import time
@@ -54,7 +54,7 @@ def benchmark(n=[10, 100, 1000, 10000]):
         print("%5d\t%0.6f|\t%0.9f|\t%0.12f|" % (cur_n, b1[i], b2[i], b0[i]))
 
 
-benchmark()
+# benchmark()
 # a = create_array()
 # print("Unsorted:", a)
 # a = selection_sort(a)
