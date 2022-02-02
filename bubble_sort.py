@@ -44,10 +44,14 @@ def benchmark(n=[10, 100, 1000, 10000]):
         s = bubble_sort(a)  # sort with bubble sort
         t1 = time()
         b0.append(t1 - t0)  # record bubble time
-    print("n \tBuilt-In\tBubble Sort")
+    print("n \tBuilt-In|\tBubble Sort")
     print("_______________________________________________________________")
     for i, cur_n in enumerate(n):
         print("%d\t%0.5f \t%0.5f" % (cur_n, b1[i], b0[i]))
 
 
-benchmark()
+#benchmark()
+# a = create_array()
+# print("Unsorted:", a)
+# a = bubble_sort(a)
+# print("Sorted  :", a)
